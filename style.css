@@ -2,8 +2,8 @@
     box-sizing:border-box;  }
 #wrapper{
     overflow:hidden;  
+    width: 100%;
 }
-
 .title{
     font-size: 35px;
     text-align: center;
@@ -14,64 +14,53 @@
     margin-left: auto;
     font-size: 16px;
     text-transform: uppercase;  
-    background-color: #fff; 
-    
+    background-color: #fff;  
 }
-
 /*ヘッダー*/
 .header-top {   
     background-image: url(img/desk.png)  ;
     background-size:cover;                  /*画面サイズに合わせてサイズも調整*/
     background-position: center center;     /*画面サイズに合わせてサイズも調整*/
     width: 100%;
-    height: 400px;  
+    height: 400px;   
 }
 .logo{
-    text-align: center;   
+    text-align: center;    
 }
 .logo-title{
     position: relative;
     font-size: 2em; 
     color:rgb(70, 65, 65);
-    border-color: black;   
-}
-  
+    border-color: black;    
+}  
 /*ナビ*/
 .navigation ul {  
     text-align: center;    
     list-style: none;    
-    font-size: 25px;    
-    margin-right: auto;
-    margin-left: auto;   
-   }
+    font-size: 25px; 
+    margin-right:auto;
+    margin-left: auto;       
+}
 .navigation ul li{
-    display: inline-block; 
-    
-        
-   }
+    display: inline-block;         
+}
 .navigation a{    
     font-weight: bold;
-   }
+}
 
    /*このサイトについて*/
 .site{
-    padding-top: 100px;
-    
-   
-}
-   
+    padding-top: 100px;   
+}   
 .site p{    
 text-align: center;
-       
-}
+}  
 /*プロフィール*/
 #profile{   
    padding-top:100px;
    width: 100%;
    margin: auto;  
 }
-
-
 .aboutme{
     display: flex;
    justify-content: center;
@@ -80,25 +69,14 @@ text-align: center;
     width: 55%;
     border-radius: 40%;  
     width: 80%;
-     
-   
-
 }
 .box2{
-    width: 45%;
-   
+    width: 45%;  
 }
-.box3{
-    
-}
-
-
 /*制作物*/
 #works{
     padding-top: 100px;
-    margin: 0 auto;
-    
-   
+    margin: 0 auto;  
     display: block;
     text-align: center;
 }
@@ -107,26 +85,20 @@ text-align: center;
     width: 300px;
     height: 300px;
 }
-.card{
-   
-}
 .card-contents{
     display:inline-block;
     flex-wrap: wrap;
     justify-content: space-between;
     border:5px solid #146DA8;
     padding: 15px;
-    margin: 15px;
-   
+    margin: 15px;   
 }
 /*歴史*/
 #history{
-  width: 100%;
-    padding-top: 100px;
-  
+    width: 100%;
+    padding-top: 100px;  
 }
 /*お問い合わせ*/
-
 .form-title {
     font-size: 2em;
     text-align: center;
@@ -140,16 +112,13 @@ form{
     margin-bottom: 20px;
 }
 .label{
-    float: left;
- 
+    float: left; 
     width: 135px;
-    border-left: solid 3px #e0505d;
-  
+    border-left: solid 3px #e0505d;  
 }
 .inputs{
     float: left;
     width: 300px;
-
     border: solid 1px #aaa;
     border-radius:5px;
     padding:10px;
@@ -159,17 +128,17 @@ form{
     font-weight:bold;
     padding: 10px 20px;
     margin: 0 5px;
-  }
+}
   textarea{
     border: solid 1px #aaa;
     border-radius:5px;
     padding: 10px;
     height: 160px;
     font-size: 15px;
-  }
+}
   .btn-submit{
     float: left;;
-   }
+}
    input[type="submit"]{
     background: #e0505c;
     border: none;
@@ -178,11 +147,7 @@ form{
     font-weight:bold;
     padding: 10px 20px;
     margin: 0 5px;
-  }
-  
-
-
-
+}
 /*スクロール後に追加されるcss*/
 .add-nav{
     position: fixed;
@@ -201,13 +166,13 @@ form{
     margin: 3em auto;
     overflow: auto;
 }
-.timeline:before{
+.timeline:before{           /*縦の線*/
     position: absolute;
     left: 50%;
     width: 5px;
     height: 100%;
     content: '';
-    background: #EF6C00
+    background: #EF6C00;
 }
 .timeline h3{               /*年のところ*/
     position: relative;
@@ -220,10 +185,7 @@ form{
     border-radius: 8px;
     font-size: 1.2em;
 }
-.timeline ul{
-    max-width: calc(100% - 4em);
-    margin: 0;
-    padding: 0 0 0 2em;
+.timeline ul{    
     list-style: none;           /*点が消える*/
 }
 .timeline li{
@@ -235,60 +197,12 @@ form{
     border-radius: 8px;
     border: solid 1px rgba(255,202,40 ,1);      /*枠の太さなど*/
 }
-.timeline li::before{           
-    position: absolute;
-    top: 12px;
-    left: -14px;
-    
-    display: inline-block;
-    width: 0;
-    height: 0;
-    border-style: solid;
-    border-width: 10px 15px 10px 0;
-    border-color: transparent #FFF8E1 transparent transparent;
-    z-index: 0;
-}
-.timeline li::after{
-    position: absolute;
-    top: 12px;
-    left: -16px;
-    content: '';
-    display: inline-block;
-    width: 0;
-    height: 0;
-    border-style: solid;
-    border-width: 10px 15px 10px 0;
-    border-color: transparent #FFCA28 transparent transparent;
-    z-index: -1;
-}
 .timeline li:nth-child(2n){     /*偶数は右に*/
     float: right;
     margin-top: 2em;
 }
 .timeline li:nth-child(2n+1){
     float: left;
-}
-.timeline li:nth-child(2n+1):before{
-    right: -14px;
-    left: auto;
-    border-width: 10px 0 10px 15px;
-    border-color: transparent transparent transparent #FFF8E1;
-}
-.timeline li:nth-child(2n+1)::after{
-    position: absolute;
-    right: -16px;
-    left: auto;
-    content: '';
-    display: inline-block;
-    width: 0;
-    height: 0;
-    border-style: solid;
-    border-width: 10px 0 10px 15px;
-    border-color: transparent transparent transparent #FFCA28;
-    z-index: -1;
-}
-.timeline li:nth-of-type(2n+1){
-    clear: both;
 }
 .timeline li .flag{
     padding: 0;
@@ -318,7 +232,6 @@ form{
 
 /*モーダルの部分*/
 
-
 .modal-show{
     position: fixed;
     top: 0;
@@ -330,15 +243,15 @@ form{
     display:none;
   }
 #modal-contents, #modal-contents2{   
-  position: absolute;
-  background-color: #e6ecf0;
-  width: 80%;
-  height:80%; 
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  border-radius: 10px;
-  overflow-y:scroll;
+    position: absolute;
+    background-color: #e6ecf0;
+    width: 80%;
+    height:80%; 
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 10px; 
+    overflow-y:scroll;
   
 }
 #modal-contents h4, h5, #modal-contents2 h4, h5{
@@ -347,23 +260,18 @@ form{
 }
 #main-photo, #main-photo2{
     width:100%;
-    height: 100%;
-    
-   
+    height: 100%;   
 }
 #container,#container2 {  
-    display: flex; 
-    
-   
+    display: flex;    
 }
 
 /* アイテム */
 #itemA,#itemA2 {
-    width: 50%;
-    ;     
+    width: 50%;       
 }
 #itemA p,#itemA2 p{
-   text-align: center;
+    text-align: center;
 }
 #itemA h4,#itemA2 h4{
     text-align: center;
@@ -371,84 +279,66 @@ form{
 #itemB,#itemB2 {
     width: 50%;
     height: 88%;  
-    margin-top: 50px;
-   
+    margin-top: 50px;   
 }
 .picture{
     width: 75px;
     height: 75px;    
 }
-
- 
-
-
-
-
 @media(max-width:769px){   
-    .navigation li{
-        font-size: 20px;
-        margin: 0 auto;
-     } 
+.navigation li{
+    font-size: 20px;
+    margin: 0 auto;
+} 
+}
+@media(max-width:481px){
+.navigation li{
+    font-size: 10px;
+    margin: 0 auto;
+}
+    
+.aboutme{
+    display: block;
+   
+}
+.aboutme .box1{
+    width: 100%;
+    margin: 0 auto;
+}
+.aboutme .box2{
+    width: 100%;
+    margin: 0 auto;
+}
+.card-contents{
+    display: block;
+}
+.login img{
+    width: 100%;
+}
+#container,#container2{
+    display: block;
+    
+   }
+#itemA,#itemB,#itemC,#itemA2,#itemB2,#itemC2{
+    width: 100%;
+}
+.inputs{
+    width: 30%;
+}
+.timeline:before{
+    left: 0;
+}
+.timeline li{
+    width: 100%;
+    margin-top: -20px;
+    margin-bottom: 50px;
+}
+.modal-show{
+    width: 100%;
 
 }
-
-
-@media(max-width:481px){
-    .navigation li{
-       font-size: 10px;
-       margin: 0 auto;
-    }
-   
-    
-  .aboutme{
-    display: block;
-   
-  }
-  .aboutme .box1{
-      width: 100%;
-     margin: 0 auto;
-  }
-  .aboutme .box2{
-      width: 100%;
-      margin: 0 auto;
-  }
-  .card-contents{
-      display: block;
-  }
-  .login img{
-      width: 100%;
-  }
-  #container,#container2{
-    display: block;
-    
-   }
-   #itemA,#itemB,#itemC,#itemA2,#itemB2,#itemC2{
-       width: 100%;
-   }
-   .inputs{
-       width: 30%;
-   }
-   .timeline:before{
-       left: 0;
-   }
-   .timeline li{
-       width: 100%;
-       margin-top: -20px;
-       margin-bottom: 50px;
-       
-   }
-   .timeline h3{
-     
-   }
- 
-   .modal-show{
-       width: 100%;
-
-   }
-   #modal-contents,#modal-contents2{       
-       height: 100%;
-   }
-  
-   
- }
+#modal-contents,#modal-contents2{       
+    height: 100%;
+}  
+}
 
