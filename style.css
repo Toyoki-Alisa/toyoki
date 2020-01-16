@@ -337,7 +337,8 @@ form{
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
-  border-radius: 10px; 
+  border-radius: 10px;
+  overflow-y:scroll;
   
 }
 #modal-contents h4, h5, #modal-contents2 h4, h5{
