@@ -102,6 +102,9 @@ h1{
 	margin-bottom: 50px;
 	gap:26px;	
 }
+.item a{
+	text-decoration: none;
+}
 /*PickUp*/
 .siteabout span{
 	font-size: 20px;
